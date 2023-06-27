@@ -1,5 +1,5 @@
 {
-  "name": "slurp-config",
+  "name": "eslint-config-slurp-config",
   "version": "1.0.0",
   "description": "A slurpy eslint config",
   "main": "index.js",
@@ -37,6 +37,7 @@
   },
   "keywords": [
     "eslint",
+    "eslint-config",
     "vue",
     "prettier",
     "eslint-config",
