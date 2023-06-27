@@ -2,8 +2,12 @@
   "name": "eslint-config-slurp-config",
   "version": "1.0.0",
   "description": "A slurpy eslint config",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "index.js",
   "scripts": {
+    "release": "release-it",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
