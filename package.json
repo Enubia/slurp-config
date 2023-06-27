@@ -1,0 +1,49 @@
+{
+  "name": "slurp-config",
+  "version": "1.0.0",
+  "description": "A slurpy eslint config",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "5.60.0",
+    "release-it": "15.11.0",
+    "eslint": "8.43.0",
+    "eslint-config-prettier": "8.8.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-unicorn": "47.0.0",
+    "eslint-plugin-unused-imports": "2.0.0",
+    "eslint-plugin-vue": "9.15.1",
+    "prettier": "2.8.8"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "5.60.0",
+    "eslint": "8.43.0",
+    "eslint-config-prettier": "8.8.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-unicorn": "47.0.0",
+    "eslint-plugin-unused-imports": "2.0.0",
+    "eslint-plugin-vue": "9.15.1",
+    "prettier": "2.8.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Enubia/slurp-config.git"
+  },
+  "keywords": [
+    "eslint",
+    "vue",
+    "prettier",
+    "eslint-config",
+    "typescript"
+  ],
+  "author": "Marco Schuster",
+  "license": "Zlib",
+  "bugs": {
+    "url": "https://github.com/Enubia/slurp-config/issues"
+  },
+  "homepage": "https://github.com/Enubia/slurp-config#readme"
+}
