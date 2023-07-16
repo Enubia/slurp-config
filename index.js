@@ -105,8 +105,8 @@ module.exports = module.exports = {
         'vue/multi-word-component-names': 'off'
     },
     env: {
-        jest: false,
-        mocha: false,
+        jest: true,
+        mocha: true,
         browser: true,
         node: true
     },
