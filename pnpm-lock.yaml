@@ -33,7 +33,7 @@ devDependencies:
     specifier: 9.15.1
     version: 9.15.1(eslint@8.45.0)
   eslint-remote-tester:
-    specifier: ^3.0.0
+    specifier: 3.0.0
     version: 3.0.0(eslint@8.45.0)
   prettier:
     specifier: 3.0.0
