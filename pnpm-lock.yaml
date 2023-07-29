@@ -24,8 +24,8 @@ devDependencies:
     specifier: 5.0.0
     version: 5.0.0(eslint-config-prettier@8.8.0)(eslint@8.45.0)(prettier@3.0.0)
   eslint-plugin-unicorn:
-    specifier: 48.0.0
-    version: 48.0.0(eslint@8.45.0)
+    specifier: 48.0.1
+    version: 48.0.1(eslint@8.45.0)
   eslint-plugin-unused-imports:
     specifier: 3.0.0
     version: 3.0.0(@typescript-eslint/eslint-plugin@6.1.0)(eslint@8.45.0)
@@ -1349,8 +1349,8 @@ packages:
       synckit: 0.8.5
     dev: true
 
-  /eslint-plugin-unicorn@48.0.0(eslint@8.45.0):
-    resolution: {integrity: sha512-8fk/v3p1ro34JSVDBEmtOq6EEQRpMR0iTir79q69KnXFZ6DJyPkT3RAi+ZoTqhQMdDSpGh8BGR68ne1sP5cnAA==}
+  /eslint-plugin-unicorn@48.0.1(eslint@8.45.0):
+    resolution: {integrity: sha512-FW+4r20myG/DqFcCSzoumaddKBicIPeFnTrifon2mWIzlfyvzwyqZjqVP7m4Cqr/ZYisS2aiLghkUWaPg6vtCw==}
     engines: {node: '>=16'}
     peerDependencies:
       eslint: '>=8.44.0'
@@ -1532,11 +1532,6 @@ packages:
     engines: {node: '>=4.0'}
     dependencies:
       estraverse: 5.3.0
-    dev: true
-
-  /estraverse@4.3.0:
-    resolution: {integrity: sha512-39nnKffWz8xN1BU/2c79n9nB9HDzo0niYUqx6xyqUnyoAnQyyWpOTdZEeiCch8BBu515t4wp9ZmgVfVhn9EBpw==}
-    engines: {node: '>=4.0'}
     dev: true
 
   /estraverse@5.3.0:
