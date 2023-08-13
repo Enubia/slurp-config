@@ -39,8 +39,8 @@ devDependencies:
     specifier: 3.0.1
     version: 3.0.1
   release-it:
-    specifier: 16.1.4
-    version: 16.1.4
+    specifier: 16.1.5
+    version: 16.1.5
   vue-eslint-parser:
     specifier: 9.3.1
     version: 9.3.1(eslint@8.47.0)
@@ -3266,8 +3266,8 @@ packages:
       jsesc: 0.5.0
     dev: true
 
-  /release-it@16.1.4:
-    resolution: {integrity: sha512-lLYuXfZzAzO9tDyhQKpvkrUMY43/+PMTzibcUsC4dDDzDf3JT69FhiAjkqXv9nBAotyENGMoeHtK0jRiL4YeEQ==}
+  /release-it@16.1.5:
+    resolution: {integrity: sha512-w/zCljPZBSYcCwR9fjDB1zaYwie1CAQganUrwNqjtXacXhrrsS5E6dDUNLcxm2ypu8GWAgZNMJfuBJqIO2E7fA==}
     engines: {node: '>=16'}
     hasBin: true
     dependencies:
