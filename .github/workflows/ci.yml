@@ -33,5 +33,11 @@ jobs:
       - name: install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: clone ghost-chat
+        run: cd .. && git clone https://github.com/Enubia/ghost-chat.git
+
+      - name: link slurp-config
+        run: pnpm link --dir ../ghost-chat
+
       - name: lint
-        run: pnpm run test
+        run: cd ../ghost-chat && pnpm run lint

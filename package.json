@@ -20,7 +20,6 @@
     "eslint-plugin-unicorn": "48.0.1",
     "eslint-plugin-unused-imports": "3.0.0",
     "eslint-plugin-vue": "9.17.0",
-    "eslint-remote-tester": "3.0.0",
     "prettier": "3.0.2",
     "release-it": "16.1.5",
     "vue-eslint-parser": "9.3.1"
