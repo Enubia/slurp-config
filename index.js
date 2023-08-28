@@ -37,6 +37,7 @@ module.exports = {
         'no-debugger': 'error',
         'no-lonely-if': 'error',
         'no-param-reassign': 'warn',
+        'no-return-await': 'error',
         'no-restricted-syntax': [
             'error',
             'ForInStatement',
