@@ -34,7 +34,7 @@ jobs:
         run: cd .. && git clone https://github.com/Enubia/ghost-chat.git
 
       - name: install ghost-chat dependencies
-        run: cd ../ghost-chat && npm install
+        run: cd ../ghost-chat && pnpm install
 
       - name: link slurp-config
         run: pnpm link --dir ../ghost-chat
