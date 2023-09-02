@@ -31,9 +31,6 @@ jobs:
       - name: link slurp-config
         run: npm link --dir ../ghost-chat
 
-      - name: install eslint global
-        run: npm install -g eslint
-
       - name: lint
         run: 
           cd ../ghost-chat &&
