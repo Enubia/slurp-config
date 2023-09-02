@@ -20,7 +20,7 @@ jobs:
           node-version: 18
 
       - name: install dependencies
-        run: npm install
+        run: npm install --frozen-lockfile
 
       - name: clone ghost-chat
         run: cd .. && git clone https://github.com/Enubia/ghost-chat.git
@@ -31,6 +31,12 @@ jobs:
       - name: link slurp-config
         run: npm link --dir ../ghost-chat
 
+      - name: install eslint global
+        run: npm install -g eslint
+
       - name: lint
         run: 
-          cd ../ghost-chat && npm run lint
+          cd ../ghost-chat &&
+          npm run lint:src &&
+          npm run lint:shared &&
+          npm run lint:electron
