@@ -33,9 +33,6 @@ jobs:
       - name: clone ghost-chat
         run: cd .. && git clone https://github.com/Enubia/ghost-chat.git
 
-      - name: dir
-        run: ls -la && cd .. && ls -la
-
       - name: install ghost-chat dependencies
         run: cd ../ghost-chat && npm install
 
@@ -43,4 +40,8 @@ jobs:
         run: pnpm link --dir ../ghost-chat
 
       - name: lint
-        run: cd ../ghost-chat && pnpm run lint
+        run: 
+          cd ../ghost-chat &&
+          pnpm exec eslint --ext .ts --ignore-path .eslintignore src/ &&
+          pnpm exec eslint --ext .ts --ignore-path .eslintignore shared/ &&
+          pnpm exec eslint --ext .ts --ignore-path .eslintignore electron/
