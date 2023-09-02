@@ -42,6 +42,6 @@ jobs:
       - name: lint
         run: 
           cd ../ghost-chat &&
-          pnpm exec eslint --ext .ts --ignore-path .eslintignore src/ &&
-          pnpm exec eslint --ext .ts --ignore-path .eslintignore shared/ &&
-          pnpm exec eslint --ext .ts --ignore-path .eslintignore electron/
+          npx eslint --ext .ts --ignore-path .eslintignore src/ &&
+          npx eslint --ext .ts --ignore-path .eslintignore shared/ &&
+          npx eslint --ext .ts --ignore-path .eslintignore electron/
