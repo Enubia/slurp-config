@@ -10,12 +10,8 @@ on:
 
 jobs:
   test:
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-    
     steps:
       - uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3
 
@@ -38,6 +34,9 @@ jobs:
 
       - name: link slurp-config
         run: pnpm link --dir ../ghost-chat
+
+      - name: install eslint global
+        run: pnpm install -g eslint
 
       - name: lint
         run: 
