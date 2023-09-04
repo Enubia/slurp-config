@@ -4,3 +4,4 @@ renovate.json
 .prettierrc
 .release-it.json
 pnpm-lock.yaml
+.github
