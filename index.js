@@ -25,6 +25,13 @@ module.exports = {
             'all'
         ],
         'dot-notation': 'error',
+        indent: [
+            "error",
+            4,
+            {
+                SwitchCase: 1
+            }
+        ],
         'no-console': [
             'warn',
             {
