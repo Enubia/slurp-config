@@ -56,5 +56,8 @@
   "bugs": {
     "url": "https://github.com/Enubia/slurp-config/issues"
   },
-  "homepage": "https://github.com/Enubia/slurp-config#readme"
+  "homepage": "https://github.com/Enubia/slurp-config#readme",
+  "engines": {
+    "node": ">=20"
+  }
 }
