@@ -1,0 +1,55 @@
+{
+    "overrides": [
+        {
+            "files": [
+                "*.vue",
+                "*.js",
+                "*.jsx",
+                "*.ts",
+                "*.tsx"
+            ],
+
+            "extends": [
+                "plugin:vue/recommended",
+                "plugin:vue/vue3-essential"
+            ],
+
+            "plugins": [
+                "import"
+            ],
+
+            "parserOptions": {
+                "parser": "@typescript-eslint/parser",
+                "ecmaVersion": "latest",
+                "extraFileExtensions": [
+                    ".vue"
+                ]
+            },
+
+            "rules": {
+                "vue/html-indent": [
+                    "error", 4,
+                    {
+                        "attribute": 1,
+                        "baseIndent": 1,
+                        "closeBracket": 0,
+                        "alignAttributesVertically": true,
+                        "ignores": []
+                    }
+                ],
+                "vue/multi-word-component-names": "off",
+                "vue/no-multiple-template-root": "off",
+
+                "import/no-unused-modules": "off",
+                "import/no-anonymous-default-export": "off"
+            },
+
+            "env": {
+                "jest": true,
+                "mocha": true,
+                "browser": true,
+                "node": true
+            }
+        }
+    ]
+}
