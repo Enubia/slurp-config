@@ -1,39 +1,22 @@
-name: Test
+name: CI
 
 on:
-  pull_request:
+  push:
     branches:
       - master
-    types: [opened, synchronize]
-
-  push:
+  pull_request:
 
 jobs:
   test:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
+      - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@8f152de45cc393bb48ce5d89d36b731f54556e65 # v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - name: install dependencies
-        run: npm install --frozen-lockfile
+      - run: npm ci
 
-      - name: clone ghost-chat
-        run: cd .. && git clone https://github.com/Enubia/ghost-chat.git
-
-      - name: install ghost-chat dependencies
-        run: cd ../ghost-chat && npm install
-
-      - name: link slurp-config
-        run: npm link --dir ../ghost-chat
-
-      - name: lint
-        run: 
-          cd ../ghost-chat &&
-          npm run lint:src &&
-          npm run lint:shared &&
-          npm run lint:electron
+      - run: npm test
