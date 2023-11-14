@@ -5,11 +5,9 @@
     },
     "extends": [
         "eslint:recommended",
-        "plugin:@typescript-eslint/eslint-recommended",
-        "prettier"
+        "plugin:@typescript-eslint/eslint-recommended"
     ],
     "plugins": [
-        "prettier",
         "@typescript-eslint",
         "unicorn",
         "import",
@@ -100,12 +98,6 @@
         "unicorn/throw-new-error": "error",
 
         "unused-imports/no-unused-imports": "error"
-    },
-    "env": {
-        "jest": true,
-        "mocha": true,
-        "browser": false,
-        "node": true
     },
     "settings": {
         "import/parsers": {

@@ -1,0 +1,9 @@
+{
+    "extends": [
+        "./index.json",
+        "./vue.json"
+    ],
+    "parserOptions": {
+        "project": true
+    }
+}
