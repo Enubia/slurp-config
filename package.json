@@ -10,21 +10,17 @@
     "release": "release-it",
     "test": "node ./test.js && eslint ."
   },
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "6.11.0",
-    "@typescript-eslint/parser": "6.11.0",
-    "eslint": "8.54.0",
-    "eslint-plugin-import": "2.29.0",
-    "eslint-plugin-unicorn": "49.0.0",
-    "eslint-plugin-unused-imports": "3.0.0",
-    "eslint-plugin-vue": "9.18.1",
-    "release-it": "17.0.0",
-    "vue-eslint-parser": "9.3.2"
-  },
   "peerDependencies": {
+    "eslint": "^8.54.0",
+    "typescript": ">=5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "8.54.0",
+    "typescript": "5.2.2"
+  },
+  "dependencies": {
     "@typescript-eslint/eslint-plugin": "6.11.0",
     "@typescript-eslint/parser": "6.11.0",
-    "eslint": "8.54.0",
     "eslint-plugin-import": "2.29.0",
     "eslint-plugin-unicorn": "49.0.0",
     "eslint-plugin-unused-imports": "3.0.0",
