@@ -9,6 +9,12 @@
                 "node"
             ],
             "enabled": false
+        },
+        {
+            "matchDepTypes": [
+                "peerDependencies"
+            ],
+            "enabled": false
         }
     ],
     "pinVersions": true,
