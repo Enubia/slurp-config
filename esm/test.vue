@@ -4,11 +4,11 @@
         type="button"
         @click="log"
     >
-        {{ msg }}
+        {{ message }}
     </button>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const message = 'Hello!';
 
 function log() {

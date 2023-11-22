@@ -2,29 +2,18 @@
     "overrides": [
         {
             "files": [
-                "*.vue",
-                "*.js",
-                "*.jsx",
-                "*.ts",
-                "*.tsx"
+                "*.vue"
             ],
 
             "extends": [
-                "plugin:vue/recommended",
-                "plugin:vue/vue3-essential"
+                "plugin:vue/vue3-recommended"
             ],
 
             "plugins": [
                 "import"
             ],
 
-            "parserOptions": {
-                "parser": "@typescript-eslint/parser",
-                "ecmaVersion": "latest",
-                "extraFileExtensions": [
-                    ".vue"
-                ]
-            },
+            "parser": "vue-eslint-parser",
 
             "rules": {
                 "vue/html-indent": [

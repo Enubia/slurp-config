@@ -1,18 +1,22 @@
 {
-    "parserOptions": {
-        "parser": "@typescript-eslint/parser",
-        "sourceType": "module"
-    },
     "extends": [
         "eslint:recommended",
         "plugin:@typescript-eslint/eslint-recommended"
     ],
+
     "plugins": [
         "@typescript-eslint",
         "unicorn",
         "import",
         "unused-imports"
     ],
+
+    "parserOptions": {
+        "parser": "@typescript-eslint/parser",
+        "sourceType": "module",
+        "ecmaVersion": "latest"
+    },
+
     "rules": {
         "dot-notation": "error",
         "indent": [
@@ -99,6 +103,7 @@
 
         "unused-imports/no-unused-imports": "error"
     },
+    
     "settings": {
         "import/parsers": {
             "@typescript-eslint/parser": [

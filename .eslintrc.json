@@ -3,7 +3,12 @@
         "./index.json",
         "./vue.json"
     ],
+
     "parserOptions": {
-        "project": true
-    }
+        "extraFileExtensions": [".vue"]
+    },
+
+    "ignorePatterns": [
+        "**/*.d.ts"
+    ]
 }
