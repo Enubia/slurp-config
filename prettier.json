@@ -1,27 +1,16 @@
 {
+    "extends": [
+        "plugin:@stylistic/recommended-extends"
+    ],
+
+    "plugins": [
+        "@stylistic"
+    ],
+
     "rules": {
         "arrow-body-style": "error",
         "curly": "error",
 
-        "@stylistic/computed-property-spacing": [
-            "error",
-            "never"
-        ],
-        "@stylistic/key-spacing": [
-            "error",
-            {
-                "beforeColon": false,
-                "afterColon": true,
-                "mode": "strict"
-            }
-        ],
-        "@stylistic/keyword-spacing": [
-            "error",
-            {
-                "before": true,
-                "after": true
-            }
-        ],
         "@stylistic/no-tabs": "error",
         "@stylistic/quotes": [
             "error",
@@ -29,18 +18,6 @@
             {
                 "avoidEscape": true,
                 "allowTemplateLiterals": false
-            }
-        ],
-        "@stylistic/lines-around-comment": [
-            "error",
-            {
-                "beforeBlockComment": true,
-                "beforeLineComment": true,
-                "allowBlockStart": true,
-                "allowObjectStart": true,
-                "allowArrayStart": true,
-                "allowClassStart": true,
-                "afterHashbangComment": true
             }
         ],
         "@stylistic/lines-between-class-members": [
@@ -71,10 +48,36 @@
                 "ignoreRegExpLiterals": true
             }
         ],
-        "@stylistic/space-infix-ops": [
+        "@stylistic/semi": [
+            "error",
+            "always"
+        ],
+        "@stylistic/operator-linebreak": [
+            "error",
+            "after"
+        ],
+        "@stylistic/member-delimiter-style": [
             "error",
             {
-                "int32Hint": false
+                "multiline": {
+                    "delimiter": "semi",
+                    "requireLast": true
+                },
+                "singleline": {
+                    "delimiter": "semi",
+                    "requireLast": false
+                }
+            }
+        ],
+        "@stylistic/quote-props": [
+            "error",
+            "as-needed"
+        ],
+        "@stylistic/brace-style": [
+            "error",
+            "1tbs",
+            {
+                "allowSingleLine": true
             }
         ]
     }
