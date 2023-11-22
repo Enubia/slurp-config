@@ -4,10 +4,6 @@
         "./vue.json"
     ],
 
-    "parserOptions": {
-        "extraFileExtensions": [".vue"]
-    },
-
     "ignorePatterns": [
         "**/*.d.ts"
     ]

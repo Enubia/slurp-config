@@ -21,13 +21,13 @@
     "vue": "^3.3.8"
   },
   "dependencies": {
+    "@stylistic/eslint-plugin": "1.4.0",
     "@typescript-eslint/eslint-plugin": "6.11.0",
     "@typescript-eslint/parser": "6.11.0",
     "eslint-plugin-import": "2.29.0",
     "eslint-plugin-unicorn": "49.0.0",
     "eslint-plugin-unused-imports": "3.0.0",
-    "eslint-plugin-vue": "9.18.1",
-    "vue-eslint-parser": "9.3.2"
+    "eslint-plugin-vue": "9.18.1"
   },
   "files": [
     "index.json",

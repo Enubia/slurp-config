@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@stylistic/eslint-plugin':
+    specifier: 1.4.0
+    version: 1.4.0(eslint@8.54.0)(typescript@5.3.2)
   '@typescript-eslint/eslint-plugin':
     specifier: 6.11.0
     version: 6.11.0(@typescript-eslint/parser@6.11.0)(eslint@8.54.0)(typescript@5.3.2)
@@ -23,9 +26,6 @@ dependencies:
   eslint-plugin-vue:
     specifier: 9.18.1
     version: 9.18.1(eslint@8.54.0)
-  vue-eslint-parser:
-    specifier: 9.3.2
-    version: 9.3.2(eslint@8.54.0)
 
 devDependencies:
   eslint:
@@ -306,6 +306,51 @@ packages:
     engines: {node: '>=18'}
     dev: true
 
+  /@stylistic/eslint-plugin-js@1.4.0:
+    resolution: {integrity: sha512-cANyn4ECWu8kxPmBM4K/Q4WocD3JbA0POmGbA2lJ4tynPE8jGyKpfP8SZj6BIidXV0pkyqvxEfaKppB4D16UsA==}
+    dependencies:
+      acorn: 8.11.2
+      escape-string-regexp: 4.0.0
+      eslint-visitor-keys: 3.4.3
+      espree: 9.6.1
+      graphemer: 1.4.0
+    dev: false
+
+  /@stylistic/eslint-plugin-jsx@1.4.0:
+    resolution: {integrity: sha512-MB5MW8HnRm0nAeUpgVzr4NOzLtxWYBIBtW9iDXopykl1ZJOm/0LlSFlsw9wsXd4Zqarkow6IrV18HcZ0Hc06yQ==}
+    dependencies:
+      '@stylistic/eslint-plugin-js': 1.4.0
+      estraverse: 5.3.0
+    dev: false
+
+  /@stylistic/eslint-plugin-ts@1.4.0(eslint@8.54.0)(typescript@5.3.2):
+    resolution: {integrity: sha512-eNEC0MufXfe2v9fW+g5yDzMMcws80cn1gKIt9CaLVjUuWnwCdY4SG1hUtDfEpBCTNBZgG/LKKls15dSa1x++0g==}
+    peerDependencies:
+      eslint: '*'
+    dependencies:
+      '@stylistic/eslint-plugin-js': 1.4.0
+      '@typescript-eslint/utils': 6.11.0(eslint@8.54.0)(typescript@5.3.2)
+      eslint: 8.54.0
+      graphemer: 1.4.0
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
+    dev: false
+
+  /@stylistic/eslint-plugin@1.4.0(eslint@8.54.0)(typescript@5.3.2):
+    resolution: {integrity: sha512-DtPiS4jr7m+A2nlcn8Ls4LEsOj1KC8x+KvAmoUI+nTcnin4Hkb8/I9Vteuu2CFLyVmlnKIQhrL5JC/xUEMyE9w==}
+    peerDependencies:
+      eslint: '*'
+    dependencies:
+      '@stylistic/eslint-plugin-js': 1.4.0
+      '@stylistic/eslint-plugin-jsx': 1.4.0
+      '@stylistic/eslint-plugin-ts': 1.4.0(eslint@8.54.0)(typescript@5.3.2)
+      eslint: 8.54.0
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
+    dev: false
+
   /@szmarczak/http-timer@5.0.1:
     resolution: {integrity: sha512-+PmQX0PiAYPMeVYe237LJAYvOMYW1j2rH5YROyS3b4CTVJum34HfRvKvAzozHAQG0TnHNdUfY9nCeUyRAs//cw==}
     engines: {node: '>=14.16'}
@@ -560,6 +605,12 @@ packages:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
       acorn: 8.9.0
+
+  /acorn@8.11.2:
+    resolution: {integrity: sha512-nc0Axzp/0FILLEVsm4fNwLCwMttvhEI263QtVPQcbpfZZ3ts0hLsZGOpE6czNlid7CJ9MlyH8reXkpsf3YUY4w==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
+    dev: false
 
   /acorn@8.9.0:
     resolution: {integrity: sha512-jaVNAFBHNLXspO543WnNNPZFRtavh3skAkITqD0/2aeMkKZTN+254PyhwxFYrk3vQ1xfY+2wbesJMs/JC8/PwQ==}

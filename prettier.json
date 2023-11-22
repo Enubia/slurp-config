@@ -1,20 +1,29 @@
 {
     "rules": {
         "arrow-body-style": "error",
-        "no-tabs": "error",
         "curly": "error",
-        "max-len": [
+
+        "@stylistic/computed-property-spacing": [
+            "error",
+            "never"
+        ],
+        "@stylistic/key-spacing": [
             "error",
             {
-                "code": 120,
-                "comments": 100,
-                "ignoreUrls": true,
-                "ignoreStrings": true,
-                "ignoreTemplateLiterals": true,
-                "ignoreRegExpLiterals": true
+                "beforeColon": false,
+                "afterColon": true,
+                "mode": "strict"
             }
         ],
-        "quotes": [
+        "@stylistic/keyword-spacing": [
+            "error",
+            {
+                "before": true,
+                "after": true
+            }
+        ],
+        "@stylistic/no-tabs": "error",
+        "@stylistic/quotes": [
             "error",
             "single",
             {
@@ -22,7 +31,7 @@
                 "allowTemplateLiterals": false
             }
         ],
-        "lines-around-comment": [
+        "@stylistic/lines-around-comment": [
             "error",
             {
                 "beforeBlockComment": true,
@@ -32,6 +41,40 @@
                 "allowArrayStart": true,
                 "allowClassStart": true,
                 "afterHashbangComment": true
+            }
+        ],
+        "@stylistic/lines-between-class-members": [
+            "error",
+            "always",
+            {
+                "exceptAfterSingleLine": true
+            }
+        ],
+        "@stylistic/indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "@stylistic/linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "@stylistic/max-len": [
+            "error",
+            {
+                "code": 120,
+                "ignoreComments": true,
+                "ignoreStrings": true,
+                "ignoreTemplateLiterals": true,
+                "ignoreRegExpLiterals": true
+            }
+        ],
+        "@stylistic/space-infix-ops": [
+            "error",
+            {
+                "int32Hint": false
             }
         ]
     }
