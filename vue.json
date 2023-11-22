@@ -14,7 +14,7 @@
             ],
 
             "plugins": [
-                "@typescript-eslint"
+                "vue"
             ],
 
             "parserOptions": {
@@ -41,10 +41,7 @@
             },
 
             "env": {
-                "jest": true,
-                "mocha": true,
-                "browser": true,
-                "node": true
+                "browser": true
             }
         }
     ]

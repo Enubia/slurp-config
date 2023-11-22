@@ -25,6 +25,7 @@
     "@typescript-eslint/eslint-plugin": "6.11.0",
     "@typescript-eslint/parser": "6.11.0",
     "eslint-plugin-import": "2.29.0",
+    "eslint-plugin-react": "7.33.2",
     "eslint-plugin-unicorn": "49.0.0",
     "eslint-plugin-unused-imports": "3.0.0",
     "eslint-plugin-vue": "9.18.1"
@@ -33,6 +34,8 @@
     "index.json",
     "base.json",
     "prettier.json",
+    "react.json",
+    "ts.json",
     "vue.json"
   ],
   "repository": {
