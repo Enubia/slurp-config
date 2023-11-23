@@ -1,7 +1,6 @@
 node_modules
 renovate.json
 .nvmrc
-.prettierrc
 .release-it.json
 pnpm-lock.yaml
 .github

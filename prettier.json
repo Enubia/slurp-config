@@ -1,4 +1,6 @@
 {
+    "$schema": "https://json.schemastore.org/eslintrc.json",
+
     "extends": [
         "plugin:@stylistic/recommended-extends"
     ],
@@ -33,6 +35,10 @@
             {
                 "SwitchCase": 1
             }
+        ],
+        "@stylistic/jsx-indent": [
+            "error",
+            4
         ],
         "@stylistic/linebreak-style": [
             "error",

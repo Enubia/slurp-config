@@ -1,51 +1,36 @@
 {
+    "$schema": "https://json.schemastore.org/eslintrc.json",
+
+    "extends": [
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended",
+        "./prettier.json"
+    ],
+
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+
+    "rules": {},
+
+    "env": {
+        "browser": true
+    },
+
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+
     "overrides": [
         {
             "files": [
-                "*.js",
-                "*.jsx",
-                "*.ts",
-                "*.tsx"
-            ],
-
-            "extends": [
-                "plugin:react/recommended"
-            ],
-
-            "plugins": [
-                "react",
-                "@stylistic"
-            ],
-
-            "parserOptions": {
-                "ecmaVersion": "latest",
-                "ecmaFeatures": {
-                    "jsx": true
-                }
-            },
-
-            "rules": {
-                "@stylistic/jsx-indent": [
-                    "error",
-                    4
-                ]
-            },
-
-            "env": {
-                "browser": true,
-                "node": true
-            },
-
-            "settings": {
-                "react": {
-                    "version": "detect"
-                }
-            },
-
-            "globals": {
-                "React": false,
-                "ReactDOM": false
-            }
+                "*.jsx"
+            ]
         }
     ]
 }
