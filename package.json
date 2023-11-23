@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-slurp-config",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "A slurpy eslint config",
   "publishConfig": {
     "access": "public"
