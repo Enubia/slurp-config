@@ -23,7 +23,7 @@
     "eslint": "8.54.0",
     "release-it": "17.0.0",
     "typescript": "5.3.2",
-    "vue": "3.3.8"
+    "vue": "3.3.9"
   },
   "dependencies": {
     "@stylistic/eslint-plugin": "1.4.1",
