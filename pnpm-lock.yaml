@@ -38,8 +38,8 @@ devDependencies:
     specifier: 8.55.0
     version: 8.55.0
   release-it:
-    specifier: 17.0.0
-    version: 17.0.0(typescript@5.3.2)
+    specifier: 17.0.1
+    version: 17.0.1(typescript@5.3.2)
   typescript:
     specifier: 5.3.2
     version: 5.3.2
@@ -3287,8 +3287,8 @@ packages:
       jsesc: 0.5.0
     dev: false
 
-  /release-it@17.0.0(typescript@5.3.2):
-    resolution: {integrity: sha512-1A1sSQy8VXuAJcslZGhKtOD/LVBuf1sH4XqhKsQuh+2EIksC2STx/MdKmVE86jFd/zorHTXOpl7Lr/isD0dDrg==}
+  /release-it@17.0.1(typescript@5.3.2):
+    resolution: {integrity: sha512-XHeirIW8ptkkrH1+uCg+ditclZJbSKeovrtIb42v3s2S/icF2xCTwFHpbvAKQGqBVJ5Zm49If8bwsryi247KdQ==}
     engines: {node: '>=18'}
     hasBin: true
     dependencies:
