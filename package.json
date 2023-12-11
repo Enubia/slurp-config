@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "eslint": "8.55.0",
-    "release-it": "17.0.0",
+    "release-it": "17.0.1",
     "typescript": "5.3.2",
     "vue": "3.3.11"
   },
